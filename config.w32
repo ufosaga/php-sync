@@ -1,8 +1,0 @@
-// $Id$
-// vim:ft=javascript
-
-ARG_ENABLE("sync", "enable synchronization object support", "no");
-
-if (PHP_SYNC != "no") {
-	EXTENSION("sync", "sync.c");
-}
