@@ -64,6 +64,18 @@ bool SyncReaderWriter::writeunlock()
   Write unlocks a reader-writer object.
 ```
 
+Install
+-------
+```shell
+git clone git@github.com:ufosaga/php-sync.git
+cd php-sync
+phpize
+./configure
+make
+sudo make install
+make test
+```
+
 Usage Examples
 --------------
 
@@ -75,7 +87,6 @@ $mutex = new SyncMutex();
 $mutex->lock();
 ...
 $mutex->unlock();
-
 
 $mutex2 = new SyncMutex("UniqueName");
 
